@@ -1,0 +1,25 @@
+ #container 
+ { 
+ 	width: 1100px;  
+ 	height:500px; 
+ 	overflow: hidden; 
+ 	position: absolute; 
+ 	z-index: 0;
+ 	left: 182px;
+ }
+ #list 
+ { 
+ 	width: 7700px; 
+ 	height: 500px; 
+ 	position: absolute; 
+ 	z-index: 1;
+ }
+ #list img { float: left; width:1100px}
+ #buttons { position: absolute; height: 48px; width: 164px; z-index: 2; bottom: 20px; left: 490px;}
+ #buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 20px; height: 20px; border-radius: 34%; background: #333; margin-right: 5px;}
+ #buttons .on {  background: rgb(34,67,229);}
+ .arrow { cursor: pointer; display: none; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 180px; background-color: RGBA(0,0,0,.3); color: #fff;}
+ .arrow:hover { background-color: RGBA(0,0,0,.7);}
+ #container:hover .arrow { display: block;}
+ #prev { left: 20px;}
+ #next { right: 20px;}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.multipart.maxSize" value="20971520"></constant>
+	<constant name="struts.action.excludePattern" value="/shopweb"></constant> 
+	<package name="shop" extends="struts-default">
+		<!-- 用于页面间的跳转使用 -->
+		<action name="send_*_*_*" class="sendAction" method="{3}">
+			<result name="send">/WEB-INF/{1}/{2}.jsp</result>
+			<result name="sendindex">{1}.jsp</result>
+			<result name="admin">/WEB-INF/{1}/{2}.jsp</result>
+		</action>
+	
+		<action name="product_*" class="productAction" method="{1}">	
+			<result name="proall">/WEB-INF/admin/table.jsp</result>
+			<result type="redirectAction" name="del">product_profindall</result> 
+			
+		</action>
+		
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="success">index.jsp</result>			
+			<result name="user">/WEB-INF/admin/table.jsp</result>
+		</action>
+		
+		<action name="admin_*" class="administorAction" method="{1}">
+			<result name="admin">/WEB-INF/admin/table.jsp</result>
+			<result type="redirectAction" name="del">admin_adfindall</result> 
+			<result type="redirectAction" name="send">send_admin_adminpeople_admin</result> 
+			<result name="adxuanchuan">/WEB-INF/admin/adminadvice.jsp</result>
+		</action>
+		
+		<action name="cate_*" class="categoryAction" method="{1}">
+			<result name="cate">/WEB-INF/admin/table.jsp</result>
+			<result type="redirectAction" name="del">cate_cafindall</result>  
+			<result type="redirectAction" name="send">send_admin_adminpeople_admin</result> 
+		</action>
+		
+		<action name="merch_*" class="merchantsAction" method="{1}">
+			<result name="merch">/WEB-INF/admin/table.jsp</result>
+			<result type="redirectAction" name="del">merch_merchall</result> 
+			<result name="ss">/index.jsp</result>
+			<interceptor-ref name="fileUpload">
+				<param name="maximumSize">20971520</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+		
+	</package>
+	
+	 
+
+</struts>

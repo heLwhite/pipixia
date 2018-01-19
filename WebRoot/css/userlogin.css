@@ -1,0 +1,160 @@
+@CHARSET "UTF-8";
+
+
+.titlediv
+{
+	padding-top:19px;
+	padding-bottom:19px;
+	
+}
+
+.titleimg
+{
+	margin-left:10px;
+}
+
+.center
+{
+	width:100%;
+	height:600px;
+	background:#000000
+}
+
+.logindiv
+{
+	position:absolute;
+	top:187px;
+	left:842px;
+	width:313px;
+	height:413px;
+	background:#ffffff;
+	padding:25px 26px 20px 26px;
+}
+.hellow
+{
+	height:18px;
+	font-size:16px;
+	color:#3c3c3c;
+	line-height:18px;
+	font-weight:700;
+	margin-top:20px;
+}
+.name
+{
+	width:267px;
+	height:42px;
+	padding-left:10px;
+	color:#9b9b9b;
+	font-size:15px;
+	
+}
+
+.password
+{
+	width:267px;
+	height:42px;
+	padding-left:10px;
+	color:#9b9b9b;
+	font-size:15px;
+}
+
+.loginform > div
+{
+	margin-top:37px;
+	border:1px solid #9a9494;
+}
+.naimg
+{
+	width:27px;
+	height:29px;
+	padding: 7px 8px 6px 5px;
+	background: #d7d9dd;
+}
+.pwedimg
+{
+	width:27px;
+	height:29px;
+	padding: 7px 8px 6px 5px;
+	background: #d7d9dd;
+}
+.login_submit
+{
+	width:313px;
+	height:42px;
+	background:rgb(32,131,239);
+	color:#ffffff;
+	margin-top:18px;
+	letter-spacing: 9px;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+.forget_login
+{
+	margin-top:20px;
+	word-spacing:9px;
+}
+
+.shengming
+{
+	margin-top:50px;
+	margin-bottom:50px
+}
+
+.shengming a
+{
+	margin-right:6px;
+	color:black;
+}
+
+.shengming p
+{
+	margin-bottom:10px;
+}
+
+.shengming .footer-copyright a
+{
+	color:#999;
+}
+
+#server-num
+{
+	margin-top:10px;
+}
+
+.footer-copyright
+{
+	color:#666;
+	
+}
+
+.login_submit
+{
+	border:none;
+}
+.errowprompt
+{
+	color:#6C6C6C;
+	width: 224px;
+    height: 43px;
+    padding: 10px 10px 10px 10px;
+	background:rgba(153, 255, 255, 0.22);
+	position:absolute;
+	left: 945px;
+    top: 215px;
+	z-index:3;
+	border-radius: 5px;
+	line-height: 22px;
+	border: 1px solid;
+	display :none;
+}
+
+.errowrow
+{
+	width:20px;
+	height:20px;
+	background:url(../images/u_l_images/gantanhao.png) 0px 0px no-repeat;
+	position: absolute;
+    left: 148px;
+    top: 32px;
+}

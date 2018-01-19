@@ -1,0 +1,74 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-size: 13px;
+	overflow:sroll;
+	min-width: 1284px;
+}
+
+img
+{
+	border: none;
+}
+
+li
+{
+	list-style: none;
+}
+
+input,select,textarea
+{
+	outline: none;
+}
+
+textarea
+{
+	resize: none;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.clearfix:after
+{
+	content: "";display: block;clear:both;
+}
+
+.clearfix
+{
+	zoom:1;
+}
+
+/* 公用*/
+.comWidth
+{
+	width:90%; min-width: 1000px; margin-left: auto;margin-right: auto;
+}
+
+a
+{
+	color: #999
+}
+
+
+.fl
+{
+	float: left;
+}
+
+.fr
+{
+	float: right;
+}
+
+input,button
+{
+	border:0px;
+}
